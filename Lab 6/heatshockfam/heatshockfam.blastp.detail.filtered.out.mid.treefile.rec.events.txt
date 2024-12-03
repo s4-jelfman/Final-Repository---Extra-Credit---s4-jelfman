@@ -1,0 +1,76 @@
+COST: 49.0
+
+
+Duplications
+Gene                L. Bound            U. Bound            
+=================== =================== =================== 
+n81                 Gnathostomata       N/A
+n75                 Gnathostomata       N/A
+n73                 Gnathostomata       N/A
+n67                 Gnathostomata       N/A
+n63                 Gnathostomata       N/A
+n57                 Clupeocephala       Euteleostomi
+n49                 Clupeocephala       Euteleostomi
+n48                 S.salar             Euteleosteomorpha
+n52                 S.salar             Euteleosteomorpha
+n62                 X.laevis            Tetrapoda
+n72                 Boreoeutheria       Amniota
+n80                 Tetrapoda           Euteleostomi
+Duplications: 12 
+
+
+Losses
+Species             No. of Losses  
+=================== ============== 
+Laurasiatheria      0
+S.townsendi         2
+G.aculeatus         1
+S.salar             1
+G.gallus            1
+Amniota             2
+Euteleosteomorpha   0
+Gnathostomata       0
+Tetrapoda           1
+C.mydas             2
+D.rerio             1
+Boreoeutheria       3
+X.laevis            3
+Archelosauria       0
+H.sapiens           1
+Clupeocephala       5
+E.caballus          1
+F.catus             1
+Sauria              1
+Euteleostomi        0
+C.carcharias        5
+
+Losses: 31
+
+
+Species             Duplications   cD_Nodes       Transfers_from Transfers_to   Losses         
+=================== ============== ============== ============== ============== ============== 
+Laurasiatheria      0              0              0              0              0              
+S.townsendi         0              0              0              0              2              
+G.aculeatus         0              0              0              0              1              
+S.salar             2              0              0              0              1              
+G.gallus            0              0              0              0              1              
+Amniota             0              0              0              0              2              
+Euteleosteomorpha   0              0              0              0              0              
+Gnathostomata       5              0              0              0              0              
+Tetrapoda           1              0              0              0              1              
+C.mydas             0              0              0              0              2              
+D.rerio             0              0              0              0              1              
+Boreoeutheria       1              0              0              0              3              
+X.laevis            1              0              0              0              3              
+Archelosauria       0              0              0              0              0              
+H.sapiens           0              0              0              0              1              
+Clupeocephala       2              0              0              0              5              
+E.caballus          0              0              0              0              1              
+F.catus             0              0              0              0              1              
+Sauria              0              0              0              0              1              
+Euteleostomi        0              0              0              0              0              
+C.carcharias        0              0              0              0              5              
+
+Duplications: 12
+Losses: 31
+

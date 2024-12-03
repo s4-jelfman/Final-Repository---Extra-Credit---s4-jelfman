@@ -1,0 +1,2 @@
+GT name	Candidates	Feasible	Saved	Score
+heatshockfam.blastp.detail.filtered.out.mid.treefile	1	1	1	49.0

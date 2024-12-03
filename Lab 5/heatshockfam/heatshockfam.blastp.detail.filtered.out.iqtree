@@ -1,0 +1,332 @@
+IQ-TREE 2.3.6 built Aug  1 2024
+
+Input file name: /home/bio312-user/lab05-s4-jelfman/heatshockfam/heatshockfam.blastp.detail.filtered.out
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 276412
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 20 sequences with 696 amino-acid sites
+Number of constant sites: 258 (= 37.069% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 258 (= 37.069% of all sites)
+Number of parsimony informative sites: 384
+Number of distinct site patterns: 550
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: JTT+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+JTT+G4            -9213.078   18502.156 +    0.781   18506.667 +    0.799   18674.879 +    0.947
+JTTDCMut+G4       -9216.594   18509.187 -   0.0232   18513.699 -   0.0238   18681.910 -   0.0282
+JTT+I+G4          -9213.494   18504.988 +     0.19   18509.744 +    0.172   18682.256 -   0.0237
+JTTDCMut+I+G4     -9216.928   18511.856 -  0.00611   18516.612 -  0.00553   18689.125 - 0.000764
+Q.mammal+G4       -9228.322   18532.644 - 1.87e-07   18537.156 - 1.91e-07   18705.368 - 2.27e-07
+Q.mammal+I+G4     -9228.229   18534.458 - 7.56e-08   18539.214 - 6.84e-08   18711.726 - 9.45e-09
+Q.plant+G4        -9239.731   18555.463 - 2.08e-12   18559.974 - 2.12e-12   18728.186 - 2.52e-12
+Q.plant+I+G4      -9239.584   18557.167 - 8.85e-13   18561.923 - 8.01e-13   18734.436 - 1.11e-13
+Q.bird+G4         -9250.381   18576.761 - 4.92e-17   18581.273 - 5.04e-17   18749.485 - 5.97e-17
+Q.bird+I+G4       -9250.168   18578.335 - 2.24e-17   18583.091 - 2.03e-17   18755.604 -  2.8e-18
+JTT+F+G4          -9202.717   18519.433 - 0.000138   18529.797 - 7.59e-06   18778.518 - 2.96e-23
+JTTDCMut+F+G4     -9204.520   18523.040 - 2.28e-05   18533.403 - 1.25e-06   18782.125 - 4.88e-24
+JTT+F+I+G4        -9203.016   18522.031 - 3.77e-05   18532.775 - 1.71e-06   18785.661 - 8.33e-25
+Q.plant+F+G4      -9206.317   18526.634 - 3.78e-06   18536.997 - 2.07e-07   18785.719 - 8.09e-25
+JTTDCMut+F+I+G4   -9204.768   18525.536 - 6.54e-06   18536.280 - 2.97e-07   18789.166 - 1.44e-25
+Q.plant+F+I+G4    -9206.046   18528.092 - 1.82e-06   18538.837 - 8.26e-08   18791.723 - 4.02e-26
+Q.pfam+G4         -9292.242   18660.483 - 3.25e-35   18664.995 - 3.33e-35   18833.207 - 3.95e-35
+WAG+G4            -9295.006   18666.013 - 2.05e-36   18670.524 -  2.1e-36   18838.736 - 2.49e-36
+Q.pfam+I+G4       -9292.523   18663.046 - 9.03e-36   18667.802 - 8.18e-36   18840.315 - 1.13e-36
+Q.insect+F+G4     -9233.715   18581.431 - 4.77e-18   18591.794 - 2.62e-19   18840.516 - 1.02e-36
+Q.insect+F+I+G4   -9233.466   18582.931 - 2.25e-18   18593.675 - 1.02e-19   18846.562 - 4.97e-38
+WAG+I+G4          -9296.032   18670.063 -  2.7e-37   18674.819 - 2.45e-37   18847.332 - 3.38e-38
+Q.mammal+F+G4     -9240.562   18595.125 - 5.07e-21   18605.488 - 2.78e-22   18854.210 - 1.08e-39
+Q.mammal+F+I+G4   -9240.440   18596.881 - 2.11e-21   18607.625 - 9.55e-23   18860.511 - 4.65e-41
+LG+G4             -9308.199   18692.398 - 3.82e-42   18696.910 - 3.91e-42   18865.122 - 4.63e-42
+LG+I+G4           -9308.755   18695.511 - 8.06e-43   18700.267 - 7.29e-43   18872.779 - 1.01e-43
+LG+I+R3           -9301.845   18687.691 - 4.02e-41   18693.222 - 2.47e-41   18878.595 -  5.5e-45
+LG+R3             -9308.512   18699.023 - 1.39e-43   18704.289 - 9.76e-44   18885.382 - 1.85e-46
+LG+F+G4           -9257.127   18628.253 - 3.24e-28   18638.617 - 1.78e-29   18887.338 - 6.94e-47
+LG+R4             -9303.730   18693.460 - 2.25e-42   18699.264 -  1.2e-42   18888.910 - 3.16e-47
+LG+I+R4           -9301.572   18691.144 - 7.15e-42   18697.227 - 3.34e-42   18891.139 - 1.04e-47
+VT+G4             -9321.990   18719.979 - 3.92e-48   18724.491 - 4.01e-48   18892.702 - 4.75e-48
+LG+F+I+G4         -9257.646   18631.291 -  7.1e-29   18642.035 - 3.22e-30   18894.921 - 1.57e-48
+Q.bird+F+G4       -9260.974   18635.948 - 6.92e-30   18646.312 - 3.79e-31   18895.033 - 1.48e-48
+Q.insect+G4       -9324.934   18725.868 - 2.06e-49   18730.379 - 2.11e-49   18898.591 -  2.5e-49
+VT+I+G4           -9322.458   18722.916 - 9.02e-49   18727.672 - 8.16e-49   18900.185 - 1.13e-49
+Q.pfam+F+G4       -9263.737   18641.475 - 4.36e-31   18651.838 - 2.39e-32   18900.559 - 9.35e-50
+Q.bird+F+I+G4     -9260.677   18637.354 - 3.43e-30   18648.098 - 1.55e-31   18900.984 - 7.56e-50
+LG+I+R2           -9320.944   18721.887 - 1.51e-48   18726.895 -  1.2e-48   18903.701 - 1.94e-50
+Q.insect+I+G4     -9324.904   18727.809 - 7.81e-50   18732.565 - 7.07e-50   18905.077 - 9.76e-51
+Q.pfam+F+I+G4     -9263.903   18643.806 - 1.36e-31   18654.551 - 6.17e-33   18907.437 -    3e-51
+WAG+F+G4          -9267.748   18649.495 - 7.91e-33   18659.859 - 4.34e-34   18908.580 - 1.69e-51
+Q.yeast+F+G4      -9269.636   18653.272 -  1.2e-33   18663.636 - 6.57e-35   18912.357 - 2.56e-52
+WAG+F+I+G4        -9268.655   18653.310 - 1.17e-33   18664.054 - 5.33e-35   18916.940 - 2.59e-53
+Q.yeast+F+I+G4    -9269.342   18654.684 - 5.91e-34   18665.428 - 2.68e-35   18918.315 -  1.3e-53
+Dayhoff+G4        -9334.961   18745.922 - 9.11e-54   18750.433 - 9.32e-54   18918.645 - 1.11e-53
+DCMut+G4          -9335.462   18746.925 - 5.52e-54   18751.436 - 5.65e-54   18919.648 - 6.69e-54
+Dayhoff+I+G4      -9335.038   18748.075 -  3.1e-54   18752.831 - 2.81e-54   18925.344 - 3.88e-55
+DCMut+I+G4        -9335.666   18749.332 - 1.66e-54   18754.089 -  1.5e-54   18926.601 - 2.07e-55
+LG+R2             -9337.111   18752.221 -  3.9e-55   18756.977 - 3.54e-55   18929.490 - 4.88e-56
+cpREV+G4          -9343.595   18763.191 - 1.62e-57   18767.702 - 1.66e-57   18935.914 - 1.97e-57
+cpREV+I+G4        -9343.658   18765.317 -  5.6e-58   18770.073 - 5.07e-58   18942.585 -    7e-59
+VT+F+G4           -9288.609   18691.219 - 6.89e-42   18701.582 - 3.78e-43   18950.303 - 1.48e-60
+VT+F+I+G4         -9289.030   18694.061 - 1.66e-42   18704.805 - 7.54e-44   18957.691 - 3.67e-62
+Dayhoff+F+G4      -9300.484   18714.968 -  4.8e-47   18725.331 - 2.63e-48   18974.053 - 1.03e-65
+DCMut+F+G4        -9300.919   18715.837 - 3.11e-47   18726.201 -  1.7e-48   18974.922 - 6.65e-66
+mtInv+F+G4        -9301.250   18716.500 - 2.23e-47   18726.863 - 1.22e-48   18975.584 - 4.78e-66
+Dayhoff+F+I+G4    -9300.566   18717.131 - 1.63e-47   18727.875 - 7.38e-49   18980.761 - 3.59e-67
+DCMut+F+I+G4      -9301.103   18718.207 -  9.5e-48   18728.951 - 4.31e-49   18981.837 -  2.1e-67
+mtInv+F+I+G4      -9301.250   18718.499 - 8.21e-48   18729.244 - 3.72e-49   18982.130 - 1.81e-67
+cpREV+F+G4        -9311.318   18736.636 - 9.46e-52   18747.000 - 5.19e-53   18995.721 - 2.03e-70
+cpREV+F+I+G4      -9311.360   18738.719 - 3.34e-52   18749.463 - 1.51e-53   19002.349 - 7.37e-72
+mtMet+F+G4        -9316.712   18747.423 -  4.3e-54   18757.787 - 2.36e-55   19006.508 - 9.21e-73
+mtMet+F+I+G4      -9316.749   18749.499 - 1.52e-54   18760.243 - 6.91e-56   19013.129 - 3.36e-74
+rtREV+F+G4        -9325.741   18765.482 - 5.15e-58   18775.846 - 2.83e-59   19024.567 -  1.1e-76
+HIVb+F+G4         -9325.796   18765.591 - 4.88e-58   18775.955 - 2.68e-59   19024.676 - 1.04e-76
+mtREV+F+G4        -9327.118   18768.237 -  1.3e-58   18778.600 - 7.13e-60   19027.322 - 2.78e-77
+Q.yeast+G4        -9390.398   18856.795 - 7.65e-78   18861.307 - 7.83e-78   19029.519 - 9.28e-78
+rtREV+F+I+G4      -9325.752   18767.504 - 1.88e-58   18778.248 -  8.5e-60   19031.134 - 4.14e-78
+HIVb+F+I+G4       -9325.761   18767.521 - 1.86e-58   18778.265 - 8.43e-60   19031.152 -  4.1e-78
+PMB+G4            -9391.601   18859.203 -  2.3e-78   18863.714 - 2.35e-78   19031.926 - 2.78e-78
+mtREV+F+I+G4      -9327.358   18770.715 - 3.76e-59   18781.459 - 1.71e-60   19034.345 - 8.31e-79
+Q.yeast+I+G4      -9390.262   18858.523 - 3.22e-78   18863.279 - 2.92e-78   19035.792 - 4.03e-79
+PMB+I+G4          -9392.187   18862.373 -  4.7e-79   18867.129 - 4.26e-79   19039.642 - 5.88e-80
+HIVb+G4           -9398.061   18872.123 - 3.59e-81   18876.634 - 3.68e-81   19044.846 - 4.36e-81
+HIVb+I+G4         -9398.058   18874.116 - 1.33e-81   18878.872 -  1.2e-81   19051.385 - 1.66e-82
+FLU+F+G4          -9353.609   18821.218 - 4.07e-70   18831.582 - 2.23e-71   19080.303 - 8.71e-89
+FLU+F+I+G4        -9353.641   18823.282 - 1.45e-70   18834.026 - 6.57e-72   19086.912 -  3.2e-90
+mtVer+F+G4        -9359.666   18833.332 - 9.52e-73   18843.695 - 5.22e-74   19092.417 - 2.04e-91
+mtVer+F+I+G4      -9359.672   18835.344 - 3.48e-73   18846.088 - 1.58e-74   19098.974 - 7.68e-93
+PMB+F+G4          -9369.179   18852.359 - 7.03e-77   18862.722 - 3.86e-78   19111.444 - 1.51e-95
+rtREV+G4          -9432.733   18941.465 - 3.15e-96   18945.977 - 3.22e-96   19114.188 - 3.82e-96
+PMB+F+I+G4        -9369.706   18855.412 - 1.53e-77   18866.156 - 6.93e-79   19119.042 - 3.37e-97
+rtREV+I+G4        -9432.754   18943.508 - 1.13e-96   18948.264 - 1.03e-96   19120.777 - 1.42e-97
+Blosum62+G4       -9436.039   18948.078 - 1.15e-97   18952.590 - 1.18e-97   19120.802 -  1.4e-97
+Blosum62+I+G4     -9436.499   18950.998 - 2.68e-98   18955.754 - 2.42e-98   19128.267 - 3.35e-99
+FLU+G4            -9439.957   18955.913 - 2.29e-99   18960.425 - 2.35e-99   19128.636 - 2.78e-99
+mtZOA+F+G4        -9378.778   18871.556 - 4.77e-81   18881.920 - 2.62e-82   19130.641 - 1.02e-99
+FLU+I+G4          -9439.977   18957.955 - 8.26e-100   18962.711 - 7.48e-100   19135.223 - 1.03e-100
+mtZOA+F+I+G4      -9378.893   18873.786 - 1.56e-81   18884.530 - 7.09e-83   19137.416 - 3.45e-101
+Blosum62+F+G4     -9385.695   18885.390 - 4.72e-84   18895.754 - 2.59e-85   19144.475 - 1.01e-102
+Blosum62+F+I+G4   -9386.112   18888.225 - 1.14e-84   18898.969 - 5.19e-86   19151.855 - 2.53e-104
+mtMAM+F+G4        -9414.487   18942.975 - 1.48e-96   18953.339 - 8.11e-98   19202.060 - 3.17e-115
+mtMAM+F+I+G4      -9414.572   18945.144 -    5e-97   18955.888 - 2.27e-98   19208.774 - 1.1e-116
+FLAVI+F+G4        -9426.630   18967.259 - 7.88e-102   18977.623 - 4.32e-103   19226.344 - 1.69e-120
+FLAVI+F+I+G4      -9426.685   18969.370 - 2.74e-102   18980.115 - 1.24e-103   19233.001 - 6.05e-122
+FLAVI+G4          -9498.765   19073.530 - 6.61e-125   19078.041 - 6.77e-125   19246.253 - 8.02e-125
+FLAVI+I+G4        -9498.840   19075.679 - 2.26e-125   19080.436 - 2.04e-125   19252.948 - 2.82e-126
+HIVw+F+G4         -9505.456   19124.912 - 4.6e-136   19135.276 - 2.52e-137   19383.997 - 9.85e-155
+LG+I              -9570.333   19216.666 - 5.48e-156   19221.177 - 5.61e-156   19389.389 - 6.65e-156
+HIVw+F+I+G4       -9505.387   19126.773 - 1.81e-136   19137.517 - 8.23e-138   19390.404 -   4e-156
+mtART+F+G4        -9515.632   19145.264 - 1.75e-140   19155.628 - 9.61e-142   19404.349 - 3.75e-159
+mtART+F+I+G4      -9515.834   19147.668 - 5.27e-141   19158.412 - 2.39e-142   19411.298 - 1.16e-160
+LG                -9679.931   19433.862 - 3.76e-203   19438.135 - 4.33e-203   19602.040 - 4.43e-202
+mtZOA+G4          -9701.762   19479.524 - 4.57e-213   19484.035 - 4.68e-213   19652.247 - 5.54e-213
+HIVw+G4           -9702.974   19481.948 - 1.36e-213   19486.459 - 1.39e-213   19654.671 - 1.65e-213
+mtZOA+I+G4        -9701.836   19481.672 - 1.56e-213   19486.428 - 1.41e-213   19658.941 - 1.95e-214
+HIVw+I+G4         -9702.883   19483.766 - 5.48e-214   19488.522 - 4.96e-214   19661.035 - 6.85e-215
+mtREV+G4          -9795.458   19666.916 - 9.29e-254   19671.427 - 9.51e-254   19839.639 - 1.13e-253
+mtREV+I+G4        -9795.681   19669.361 - 2.74e-254   19674.117 - 2.48e-254   19846.630 - 3.42e-255
+mtMet+G4          -9807.286   19690.571 - 6.78e-259   19695.082 - 6.94e-259   19863.294 - 8.23e-259
+mtMet+I+G4        -9807.348   19692.696 - 2.34e-259   19697.452 - 2.12e-259   19869.965 - 2.93e-260
+mtVer+G4          -9831.829   19739.659 - 1.49e-269   19744.170 - 1.52e-269   19912.382 - 1.8e-269
+mtVer+I+G4        -9831.898   19741.796 - 5.11e-270   19746.552 - 4.62e-270   19919.064 - 6.38e-271
+mtInv+G4          -9907.705   19891.410 - 1.66e-302   19895.921 - 1.7e-302   20064.133 - 2.01e-302
+mtInv+I+G4        -9907.732   19893.464 - 5.94e-303   19898.220 - 5.38e-303   20070.733 - 7.43e-304
+mtMAM+G4          -9923.702   19923.405 - 1.87e-309   19927.916 - 1.92e-309   20096.128 - 2.27e-309
+mtMAM+I+G4        -9923.690   19925.380 - 6.97e-310   19930.136 - 6.31e-310   20102.648 - 8.72e-311
+mtART+G4          -9980.470   20036.941 -        0   20041.452 -        0   20209.664 -        0
+mtART+I+G4        -9980.452   20038.904 -        0   20043.660 -        0   20216.173 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: JTT+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.6987
+
+ Category  Relative_rate  Proportion
+  1         0.0739         0.2500
+  2         0.3629         0.2500
+  3         0.9244         0.2500
+  4         2.6388         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -9205.6994 (s.e. 285.7797)
+Unconstrained log-likelihood (without tree): -4268.0686
+Number of free parameters (#branches + #model parameters): 38
+Akaike information criterion (AIC) score: 18487.3989
+Corrected Akaike information criterion (AICc) score: 18491.9103
+Bayesian information criterion (BIC) score: 18660.1221
+
+Total tree length (sum of branch lengths): 10.3876
+Sum of internal branch lengths: 7.9775 (76.7982% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'G.gallus_DNAJA2_dnaJ_homolog_subfamily_A_member_2' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--G.gallus_DNAJA2_dnaJ_homolog_subfamily_A_member_2
+|
+|  +--X.laevis_dnaja2.S_DnaJ_subfamily_A_member_2
++--| (86)
+|  |                                                              +--C.carcharias_LOC121288591_dnaJ_homolog_subfamily_A_member_3_mitoc
+|  |                                                           +--| (21)
+|  |                                                           |  |        +--G.aculeatus_LOC120824608_dnaJ_homolog_subfamily_A_member_3_mitoch
+|  |                                                           |  |     +--| (59)
+|  |                                                           |  |     |  +--D.rerio_dnaja3b_DnaJ_heat_shock_protein_family_Hsp40_member_A3b
+|  |                                                           |  |  +--| (65)
+|  |                                                           |  |  |  |  +--S.salar_LOC106590570_dnaJ_homolog_subfamily_A_member_3_mitochondr
+|  |                                                           |  |  |  +--| (100)
+|  |                                                           |  |  |     +--S.salar_LOC106564522_dnaJ_homolog_subfamily_A_member_3_mitochondr
+|  |                                                           |  +--| (65)
+|  |                                                           |     |     +--G.aculeatus_dnaja3a_dnaJ_heat_shock_protein_family_Hsp40_member_A
+|  |                                                           |     |  +--| (98)
+|  |                                                           |     |  |  |  +--S.salar_dnaja3a_dnaJ_heat_shock_protein_family_Hsp40_member_A3a_i
+|  |                                                           |     |  |  +--| (100)
+|  |                                                           |     |  |     +--S.salar_LOC106592966_dnaJ_homolog_subfamily_A_member_3_mitochondr
+|  |                                                           |     +--| (98)
+|  |                                                           |        +--D.rerio_dnaja3a_DnaJ_heat_shock_protein_family_Hsp40_member_A3a
+|  |                                                        +--| (18)
+|  |                                                        |  |  +--X.laevis_dnaja3.S_dnaJ_homolog_subfamily_A_member_3_mitochondrial
+|  |                                                        |  +--| (95)
+|  |                                                        |     +--X.laevis_dnaja3.L_dnaJ_heat_shock_protein_family_Hsp40_member_A3_
+|  |                                                     +--| (19)
+|  |                                                     |  |  +--G.gallus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_i
+|  |                                                     |  +--| (67)
+|  |                                                     |     +--S.townsendi_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondria
+|  |                                                  +--| (22)
+|  |                                                  |  |  +--F.catus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_is
+|  |                                                  |  +--| (99)
+|  |                                                  |     |  +--E.caballus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial
+|  |                                                  |     +--| (87)
+|  |                                                  |        +--H.sapiens_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_
+|  +--------------------------------------------------| (100)
+|                                                     +**C.mydas_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_is
+|
++--X.laevis_dnaja2.L_DnaJ_heat_shock_protein_family_Hsp40_member_A2_
+
+Tree in newick format:
+
+(G.gallus_DNAJA2_dnaJ_homolog_subfamily_A_member_2:0.1088464686,(X.laevis_dnaja2.S_DnaJ_subfamily_A_member_2:0.0095576934,(((((C.carcharias_LOC121288591_dnaJ_homolog_subfamily_A_member_3_mitoc:0.3596940459,(((G.aculeatus_LOC120824608_dnaJ_homolog_subfamily_A_member_3_mitoch:0.3603185740,D.rerio_dnaja3b_DnaJ_heat_shock_protein_family_Hsp40_member_A3b:0.3230747793)59:0.0752680590,(S.salar_LOC106590570_dnaJ_homolog_subfamily_A_member_3_mitochondr:0.0238286140,S.salar_LOC106564522_dnaJ_homolog_subfamily_A_member_3_mitochondr:0.0181891068)100:0.1339576927)65:0.1671581897,((G.aculeatus_dnaja3a_dnaJ_heat_shock_protein_family_Hsp40_member_A:0.2048915289,(S.salar_dnaja3a_dnaJ_heat_shock_protein_family_Hsp40_member_A3a_i:0.0077593007,S.salar_LOC106592966_dnaJ_homolog_subfamily_A_member_3_mitochondr:0.0194304362)100:0.1287981447)98:0.0700418980,D.rerio_dnaja3a_DnaJ_heat_shock_protein_family_Hsp40_member_A3a:0.2272423996)98:0.0794278197)65:0.1168020280)21:0.0179636805,(X.laevis_dnaja3.S_dnaJ_homolog_subfamily_A_member_3_mitochondrial:0.0466932458,X.laevis_dnaja3.L_dnaJ_heat_shock_protein_family_Hsp40_member_A3_:0.0410627309)95:0.2402121846)18:0.0309427953,(G.gallus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_i:0.2234754266,S.townsendi_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondria:0.1979304439)67:0.0612486412)19:0.0424044976,(F.catus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_is:0.0456891507,(E.caballus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial:0.0224802417,H.sapiens_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_:0.0853923144)87:0.0169281205)99:0.1506254762)22:0.2390750408,C.mydas_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_is:0.0000022594)100:6.3935296080)86:0.0130956798,X.laevis_dnaja2.L_DnaJ_heat_shock_protein_family_Hsp40_member_A2_:0.0845439985);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -9206.774058
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--G.gallus_DNAJA2_dnaJ_homolog_subfamily_A_member_2
+|
+|  +--X.laevis_dnaja2.S_DnaJ_subfamily_A_member_2
++--| (86)
+|  |                                                       +--C.carcharias_LOC121288591_dnaJ_homolog_subfamily_A_member_3_mitoc
+|  |                                                    +--| (36)
+|  |                                                    |  |        +--G.gallus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_i
+|  |                                                    |  |     +--| (67)
+|  |                                                    |  |     |  +--S.townsendi_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondria
+|  |                                                    |  |  +--| (37)
+|  |                                                    |  |  |  |  +--C.mydas_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_is
+|  |                                                    |  |  |  +--| (55)
+|  |                                                    |  |  |     |  +--F.catus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_is
+|  |                                                    |  |  |     +--| (99)
+|  |                                                    |  |  |        |  +--E.caballus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial
+|  |                                                    |  |  |        +--| (87)
+|  |                                                    |  |  |           +--H.sapiens_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_
+|  |                                                    |  +--| (19)
+|  |                                                    |     |  +--X.laevis_dnaja3.S_dnaJ_homolog_subfamily_A_member_3_mitochondrial
+|  |                                                    |     +--| (95)
+|  |                                                    |        +--X.laevis_dnaja3.L_dnaJ_heat_shock_protein_family_Hsp40_member_A3_
+|  +----------------------------------------------------| (100)
+|                                                       |        +--G.aculeatus_LOC120824608_dnaJ_homolog_subfamily_A_member_3_mitoch
+|                                                       |     +--| (59)
+|                                                       |     |  +--D.rerio_dnaja3b_DnaJ_heat_shock_protein_family_Hsp40_member_A3b
+|                                                       |  +--| (65)
+|                                                       |  |  |  +--S.salar_LOC106590570_dnaJ_homolog_subfamily_A_member_3_mitochondr
+|                                                       |  |  +--| (100)
+|                                                       |  |     +--S.salar_LOC106564522_dnaJ_homolog_subfamily_A_member_3_mitochondr
+|                                                       +--| (65)
+|                                                          |     +--G.aculeatus_dnaja3a_dnaJ_heat_shock_protein_family_Hsp40_member_A
+|                                                          |  +--| (98)
+|                                                          |  |  |  +--S.salar_dnaja3a_dnaJ_heat_shock_protein_family_Hsp40_member_A3a_i
+|                                                          |  |  +--| (100)
+|                                                          |  |     +--S.salar_LOC106592966_dnaJ_homolog_subfamily_A_member_3_mitochondr
+|                                                          +--| (98)
+|                                                             +--D.rerio_dnaja3a_DnaJ_heat_shock_protein_family_Hsp40_member_A3a
+|
++--X.laevis_dnaja2.L_DnaJ_heat_shock_protein_family_Hsp40_member_A2_
+
+
+Consensus tree in newick format: 
+
+(G.gallus_DNAJA2_dnaJ_homolog_subfamily_A_member_2:0.1088726235,(X.laevis_dnaja2.S_DnaJ_subfamily_A_member_2:0.0096099321,((C.carcharias_LOC121288591_dnaJ_homolog_subfamily_A_member_3_mitoc:0.3585257416,(((G.gallus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_i:0.2232820962,S.townsendi_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondria:0.1977395396)67:0.0614754406,(C.mydas_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_is:0.2389898517,(F.catus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_is:0.0456884460,(E.caballus_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial:0.0224939918,H.sapiens_DNAJA3_dnaJ_homolog_subfamily_A_member_3_mitochondrial_:0.0854045846)87:0.0169514955)99:0.1509300370)55:0.0419775171)37:0.0323851945,(X.laevis_dnaja3.S_dnaJ_homolog_subfamily_A_member_3_mitochondrial:0.0467172637,X.laevis_dnaja3.L_dnaJ_heat_shock_protein_family_Hsp40_member_A3_:0.0411566720)95:0.2388840569)19:0.0172059518)36:0.0000024097,(((G.aculeatus_LOC120824608_dnaJ_homolog_subfamily_A_member_3_mitoch:0.3603668365,D.rerio_dnaja3b_DnaJ_heat_shock_protein_family_Hsp40_member_A3b:0.3238332811)59:0.0754548493,(S.salar_LOC106590570_dnaJ_homolog_subfamily_A_member_3_mitochondr:0.0238867894,S.salar_LOC106564522_dnaJ_homolog_subfamily_A_member_3_mitochondr:0.0181716957)100:0.1339234816)65:0.1673293873,((G.aculeatus_dnaja3a_dnaJ_heat_shock_protein_family_Hsp40_member_A:0.2049737067,(S.salar_dnaja3a_dnaJ_heat_shock_protein_family_Hsp40_member_A3a_i:0.0077804974,S.salar_LOC106592966_dnaJ_homolog_subfamily_A_member_3_mitochondr:0.0194408313)100:0.1289138385)98:0.0701467408,D.rerio_dnaja3a_DnaJ_heat_shock_protein_family_Hsp40_member_A3a:0.2274405485)98:0.0793202384)65:0.1179551265)100:6.3698340782)86:0.0130632803,X.laevis_dnaja2.L_DnaJ_heat_shock_protein_family_Hsp40_member_A2_:0.0845671749);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/bio312-user/lab05-s4-jelfman/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile -m "JTT+G4{0.698717}" --length 696
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/bio312-user/lab05-s4-jelfman/heatshockfam/heatshockfam.blastp.detail.filtered.out --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/bio312-user/lab05-s4-jelfman/heatshockfam/heatshockfam.blastp.detail.filtered.out --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Sep 25 21:56:01 2024
+Total CPU time used: 141.164661 seconds (0h:2m:21s)
+Total wall-clock time used: 72.76083261 seconds (0h:1m:12s)
+

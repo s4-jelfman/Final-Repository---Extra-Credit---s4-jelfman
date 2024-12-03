@@ -1,0 +1,530 @@
+    1  ls()
+    2  ls
+    3  sudo yum install R
+    4  R --vanilla
+    5  wget https://github.com/rcedgar/muscle/releases/download/v5.2/muscle-linux-x86.v5.2
+    6  ls
+    7  chmod +x muscle-linux-x86.v5.2
+    8  sudo cp muscle-linux-x86.v5.2 /usr/bin/muscle
+    9  muscle
+   10  ls
+   11  rm muscle-linux-x86.v5.2 
+   12  sudo yum install iqtree
+   13   wget https://github.com/iqtree/iqtree2/releases/download/v2.3.6/iqtree-2.3.6-Linux-intel.tar.gz
+   14  gunzip iqtree-2.3.6-Linux-intel.tar.gz
+   15  tar -xvf iqtree-2.3.6-Linux-intel.tar
+   16  ls
+   17  cd iqtree-2.3.6-Linux-intel/
+   18  ls
+   19  cd bin
+   20  sudo cp iqtree2 /usr/bin/iqtree
+   21  cd
+   22  iqtree
+   23  ls
+   24  rm iqtree*
+   25  rm -rf iqtre*
+   26  ls
+   27  R --vanilla
+   28  sudo R --vanilla
+   29  ls
+   30  tmux
+   31  sudo yum install tmux
+   32  mamba
+   33  conda
+   34  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+   35  bash Miniforge3-$(uname)-$(uname -m).sh
+   36  ls
+   37  sudo bash Miniforge3-$(uname)-$(uname -m).sh
+   38  exit
+   39  mamba
+   40  nano .bashrc
+   41  exit
+   42  mamba
+   43  mamba install -c bioconda spades
+   44  mamba install -c bioconda sickle-trim
+   45  sudo mamba install -c bioconda sickle-trim
+   46  conda init --reverse --dry-run
+   47  conda init --reverse
+   48  CONDA_BASE_ENVIRONMENT=$(conda info --base)
+   49  echo The next command will delete all files in ${CONDA_BASE_ENVIRONMENT}
+   50  # Warning, the rm command below is irreversible!
+   51  # check the output of the echo command above
+   52  # To make sure you are deleting the correct directory
+   53  rm -rf ${CONDA_BASE_ENVIRONMENT}
+   54  conda init --reverse --dry-run
+   55  conda init --reverse
+   56  CONDA_BASE_ENVIRONMENT=$(conda info --base)
+   57  echo The next command will delete all files in ${CONDA_BASE_ENVIRONMENT}
+   58  sudo rm -rf ${CONDA_BASE_ENVIRONMENT}
+   59  sudo rm -f "${HOME}/.condarc"
+   60  sudo rm -fr ${HOME}/.conda
+   61  exit
+   62  ls
+   63  bash Miniforge3-$(uname)-$(uname -m).sh
+   64  exit
+   65  sudo dnf install xorg-x11-xauth -y
+   66  touch ~/.Xauthority
+   67  sudo chown bio312-user:bio312-user ~/.Xauthority
+   68  chmod 600 ~/.Xauthority
+   69  exit
+   70  mamba
+   71  ls /usr/bin/miniforge*
+   72  mamba install -c bioconda spades
+   73  mamba install -c bioconda sickle-trim
+   74  sickle
+   75  mamba install bioconda::pargenes
+   76  mamba create -n pargenes-env python=3.8
+   77  conda activate pargenes-env
+   78  mamba install bioconda::pargenes
+   79  sudo amazon-linux-extras install java-openjdk11 -y
+   80  sudo yum install java-openjdk11 -y
+   81  sudo yum install xclock xterm
+   82  xclock
+   83  sudo dnf install java-11-openjdk -y
+   84  source deactivate
+   85  mamba deactivate
+   86  sudo dnf install java-11-openjdk -y
+   87  sudo dnf install xorg-x11-server-Xorg xorg-x11-xauth xorg-x11-apps -y
+   88  sudo dnf install xterm -y
+   89  java -version
+   90  sudo dnf install xeyes -y
+   91  sudo dnf install xclock -y
+   92  sudo dnf install epel-release -y
+   93  sudo dnf install xorg-x11-utils -y
+   94  mamba install -c bioconda igvtools
+   95  xclock &
+   96  ls
+   97  cd miniforge3/
+   98  ls
+   99  cd bin
+  100  ls
+  101  ls igv*
+  102  cd igvtools
+  103  cd
+  104  ls
+  105  mkdir tools
+  106  cd tools
+  107  wget https://data.broadinstitute.org/igv/projects/downloads/2.16/IGV_Linux_2.16.2_WithJava.zip
+  108  unzip IGV_Linux_2.16.2_WithJava.zip
+  109  cd
+  110  bash ~/tools/IGV_Linux_2.16.2/igv.sh
+  111  sudo nano /etc/ssh/sshd_config
+  112  sudo systemctl restart sshd
+  113  gcc --version
+  114  ls
+  115  git clone --recursive https://github.com/BenoitMorel/AleRax
+  116  exit
+  117  sudo dnf install xorg-x11-xauth -y
+  118  echo $DISPLAY
+  119  export DISPLAY=:10.0  # Adjust the display number if necessary
+  120  xterm &
+  121  bash ~/tools/IGV_Linux_2.16.2/igv.sh
+  122  sudo dnf search x11
+  123  sudo dnf search xclock
+  124  sudo dnf search xterm
+  125  sudo dnf install xorg-x11-server-utils xorg-x11-apps -y
+  126  sudo dnf install xorg-x11-server-Xvfb -y
+  127  Xvfb :99 -screen 0 1024x768x16 &
+  128  export DISPLAY=:99
+  129  bash ~/tools/IGV_Linux_2.16.2/igv.sh
+  130  wkhtmltopdf --version
+  131  exit
+  132  wkhtmltopdf --version
+  133  exit
+  134  exit
+  135  tmux
+  136  echo "bio312isCOOL!" | sudo -S sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config && sudo systemctl restart sshd.service
+  137  ls
+  138  git clone https://github.com/Bio312/lab02-s4-jelfman
+  139  ls
+  140  cd lab02-myusername
+  141  cd lab02-s4-jelfman
+  142  v
+  143  echo 'Hello World'
+  144  ```bash
+  145  MYGIT="s2-cdarwin"
+  146  ```
+  147  echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  148  ```bash
+  149  cd
+  150  ```
+  151  echo $MYGIT
+  152  echo my git username is $MYGIT
+  153  MYGIT="s4-jelfman"
+  154  echo $MYGIT
+  155  echo my git username is $MYGIT
+  156  echo "export MYGIT=$MYGIT" >> ~/.bashrc
+  157  cd ~/lab02-$MYGIT
+  158  ls
+  159  ncbi-acc-download -h
+  160  ncbi-acc-download -F genbank "NW_003143794.1"
+  161  gt gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  162  less NW_003143794.1.counts.txt
+  163  [] more NW_003143794.1
+  164  tmux
+  165  ncbi-acc-download -F gff3 "NW_003143794.1"
+  166  [] less NW_003143794.1.FA
+  167  less NW_003143794.1.FA
+  168  less NW_003143794.1.fa
+  169  echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  170  ncbi-acc-download -F genbank "NW_003143794.1"
+  171  tmux
+  172  ncbi-acc-download -F fasta "NW_003143794.1"
+  173  cd
+  174  pwd
+  175  cd data
+  176  ls
+  177  cat animal.txt
+  178  more NW_003143794.1
+  179  ncbi-acc-download -F fasta "NW_003143794.1"
+  180  more NW_003143794.1
+  181  more NW_003143794.1.fa
+  182  less NW_003143794.1.FA
+  183  cat NW_003143794.1.fa
+  184  less NW_003143794.1.fa
+  185  less NW_003143794.1.FA
+  186  more NW_003143794.1.fa
+  187  ncbi-acc-download -F gff3 "NW_003143794.1"
+  188  t gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  189  gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  190  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o NW_003143794.1.counts.txt NW_003143794.1.sorted.gff
+  191  -sort -tidy -force -o LOC100375093.sorted.gff LOC100375093.X1.gff
+  192  tmux
+  193  cd
+  194  filterGFF LOC100375093 NW_003143794.1.gff
+  195  gt gff3 -sort -tidy -force -o LOC100375093.sorted.gff LOC100375093.X1.gff
+  196  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o LOC100375093.sorted.counts.gff LOC100375093.sorted.gff
+  197  less LOC100375093.sorted.counts.gff
+  198  t gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  199  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o NW_003143794.1.counts.txt NW_003143794.1.sorted.gff
+  200  ncbi-acc-download -F gff3 "NW_003143794.1"
+  201  filterGFF LOC100375093 NW_003143794.1.gff
+  202  -sort -tidy -force -o LOC100375093.sorted.gff LOC100375093.X1.gff
+  203  tmux
+  204  cd ~/lab02-$MYGIT
+  205  gt gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  206  t gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  207  gt gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  208  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o NW_003143794.1.counts.txt NW_003143794.1.sorted.gff
+  209  less NW_003143794.1.counts.txt
+  210  bedtools getfasta -s -fi NW_003143794.1.fa -fo LOC100375093.X1.cds.fa -bed LOC100375093.X1.cds.gff
+  211  less LOC100375093.X1.cds.fa
+  212  history > lab2.commandhistory.txt
+  213  git status
+  214  history > lab2.commandhistory.txt
+  215  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore
+  216  awk '!NF || !seen[$0]++' .gitignore
+  217  git add .
+  218  cd lab02-s4-jelfman
+  219  git status
+  220  awk '!NF || !seen[$0]++' .gitignore
+  221  git add .
+  222  git status
+  223  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  224  git status
+  225  git pull --no-edit
+  226  git push
+  227  git status
+  228  ```bash
+  229   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruedna
+  230  ```bash
+  231   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni r
+  232  ```bash
+  233   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  234  ```
+  235  ```bash
+  236   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  237  ```
+  238  ```bash
+  239   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  240  `````bash
+  241   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  242  ```
+  243  ```bash
+  244   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  245  ```
+  246  ```bash
+  247   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  248  ``````bash
+  249   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  250  ```
+  251  ```bash
+  252   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  253  ```
+  254  MYGIT="s4-jelfman"
+  255  echo $MYGIT
+  256  ```bash
+  257  echo "export MYGIT=$MYGIT" >> ~/.bashrc
+  258  ```
+  259  ```bash
+  260  echo $MYGIT
+  261  ```MYGIT="s4-jefmann"
+  262  git clone https://github.com/Bio312/lab02-s4-jelfman
+  263  sudo amazon-linux-extras install java-openjdk11 -yls
+  264  d ~/lab02-$MYGIT
+  265  echo $MYGIT
+  266  ncbi-acc-download -F genbank "NW_003143794.1"
+  267  ls
+  268  less
+  269  less NW_003143794.1.gbk
+  270  [] more NW_003143794.1
+  271  [] more NW_003143794.1.fa
+  272  [] less NW_003143794.1.FA
+  273  ncbi-acc-download -F fasta "NW_003143794.1"
+  274  [] less NW_003143794.1.fa
+  275  q
+  276  -sort -tidy -force -o LOC100375093.sorted.gff LOC100375093.X1.gff
+  277  filterGFF LOC100375093 NW_003143794.1.gff
+  278  t gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  279  -sort -tidy -force -o LOC100375093.sorted.gff LOC100375093.X1.gff
+  280  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o LOC100375093.sorted.counts.gff LOC100375093.sorted.gff
+  281  less LOC100375093.sorted.counts.gff
+  282  ncbi-acc-download -F gff3 "NW_003143794.1"
+  283  filterGFF LOC100375093 NW_003143794.1.gff
+  284  -sort -tidy -force -o LOC100375093.sorted.gff LOC100375093.X1.gff
+  285  conda init --reverse --dry-runcd
+  286  git clone https://github.com/Bio312/lab03-$MYGIT
+  287  ls
+  288  ls NP_000549.1
+  289  ls NP_000549.1.fa
+  290  less NP_000549.1.fa
+  291  pwd
+  292  cd ~
+  293  pwd
+  294  cd ~/lab03-$MYGIT/globins
+  295  pwd
+  296  ls
+  297  less NP_000549.1.fa
+  298  cd ~/lab03-$MYGIT/globins
+  299  pwd
+  300  ls NP_000549.1
+  301  ls NP_000549.1.fa
+  302  blastp -db ../allprotein.fas -query NP_000549.1.fa -outfmt 0 -max_hsps 1 -out globins.blastp.typical.out
+  303  blastp -db ../allprotein.fas -query NP_000549.1.fa  -outfmt "6 sseqid pident length mismatch gapopen evalue bitscore pident stitle"  -max_hsps 1 -out globins.blastp.detail.out
+  304  less -S
+  305  grep -c H.sapiens globins.blastp.detail.out
+  306  awk '{if ($6< 1e-30)print $1 }' globins.blastp.detail.out > globins.blastp.detail.filtered.out
+  307  wc -l globins.blastp.detail.filtered.out
+  308  man -l
+  309  man wc
+  310  grep -o -E "^[A-Z]\.[a-z]+" globins.blastp.detail.filtered.out  | sort | uniq -c
+  311  ncbi-acc-download -F fasta -m protein "NP_005138.3"
+  312  blastp -db ../allprotein.fas -query NP_005138.3.fa -outfmt 0 -max_hsps 1 -out globins.blastp.typical.out
+  313  mkdir ~/lab03-$MYGIT/heat shock
+  314  blastp -db ../allprotein.fas -query NP_005138.3.fa -outfmt 0 -max_hsps 1 -out heat shock.blastp.typic
+  315  mkdir ~/lab03-$MYGIT/heatshockfam
+  316  pwd
+  317  mkdir ~/lab03-$MYGIT/heatshockfam
+  318  pwd
+  319  cd
+  320  cd heatshockfam
+  321  cd ~/lab03-$MYGIT/heatshockfam
+  322  pwd
+  323  ncbi-acc-download -F fasta -m protein "NP_005138.3"
+  324  blastp -db ../allprotein.fas -query NP_005138.3.fa -outfmt 0 -max_hsps 1 -out globins.blastp.typical.out
+  325  pwd
+  326  awk '{if ($6< 1e-30)print $1 }' heatshockfam.blastp.detail.out > globins.blastp.detail.filtered.out
+  327  awk '{if ($6< 1e-30)print $1 }' heatshockfam.blastp.detail.out > heatshockfam.blastp.detail.filter
+  328  ed.out
+  329  blastp -db ../allprotein.fas -query NP_005138.3.fa  -outfmt "6 sseqid pident length mismatch gapopen evalue bitscore pident stitle"  -max_hsps 1 -out heatshockfam.blastp.detail.out
+  330  awk '{if ($6< 1e-30)print $1 }' heatshockfam.blastp.detail.out > heatshockfam.blastp.detail.filtered.out
+  331  grep -o -E "^[A-Z]\.[a-z]+" heatshockfam.blastp.detail.filtered.out  | sort | uniq -c
+  332  cd ~/lab03-$MYGIT
+  333  history > ~/lab03-$MYGIT/lab3.commandhistory.txt
+  334  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  335  git add .
+  336  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  337  git pull --rebase=false --no-edit
+  338  git push
+  339  cd ~/lab03-$MYGIT
+  340  history > ~/lab03-$MYGIT/lab3.commandhistory.txt
+  341  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  342  git add .
+  343  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  344  git config --global user.email "joshua.elfman@stonybrook.edu"
+  345  git config --global user.name "Joshua Elfman"
+  346  "Adding all new data files I generated in AWS to the repository."
+  347  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  348  git pull --rebase=false --no-edit
+  349  git push
+  350  cd lab03-$MYGIT
+  351  ls
+  352  cd ~/lab03-$MYGIT
+  353  gunzip proteomes/*.gz
+  354  cat  proteomes/*.faa > allprotein.fas
+  355  makeblastdb -in allprotein.fas -dbtype prot
+  356  mkdir ~/lab03-$MYGIT/globins
+  357  cd ~/lab03-$MYGIT/globins
+  358  pwd
+  359  ncbi-acc-download -F fasta -m protein "NP_000549.1"
+  360  less NP_000549.1.fa
+  361  git clone https://github.com/Bio312/lab04-$MYGIT
+  362  cd lab04-$MYGIT
+  363  nano ~/lab04-$MYGIT/toy.fas 
+  364  muscle -align ~/lab04-$MYGIT/toy.fas -output ~/lab04-$MYGIT/toy.al.fas
+  365  alv -kli  ~/lab04-$MYGIT/toy.al.fas 
+  366  git clone https://github.com/Bio312/lab04-$MYGIT
+  367  cd lab04-$MYGIT
+  368  ls
+  369  muscle -align ~/lab04-$MYGIT/toy.fas -output ~/lab04-$MYGIT/toy.al.fas
+  370  alv -kli  ~/lab04-$MYGIT/toy.al.fas 
+  371  t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/toy.al.fas -output sim
+  372  alignbuddy -pi ~/lab04-$MYGIT/toy.al.fas
+  373  alignbuddy -pi ~/lab04-$MYGIT/toy.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+  374       END{ print(100*sum/num) } '
+  375  <img src="img/github.png" alt= “” width="20" height="20">
+  376  cd lab03-s4-jelfman
+  377  /home/bio312-user/lab03-jelfman
+  378  cd /home/bio312-user/lab03-jelfman
+  379  /home/bio312-user/lab03-s3-jelfman
+  380  cd /home/bio312-user/lab03-s3-jelfman
+  381  cd lab03-s3-jelfman
+  382  /home/bio312-user/lab03-s3-jelfman
+  383  /home/bio312-user/lab03-s4-jelfman
+  384  cd /home/bio312-user/lab03-s4-jelfman
+  385  cd NP_005138.3.fa
+  386  cd globins.blastp.detail.filtered.out
+  387  cd globins.blastp.detail.filtered.ou
+  388  cd ~/lab03-$MYGIT/globins/globins.blastp.detail.filtered.ou
+  389  cd ~/lab03-$MYGIT/globins/globins.blastp.detail.filtered.out
+  390  cd ~/lab03-$MYGIT/globins/globins.blastp.detail.filtered.outcd ~/lab03-$MYGIT/allprotein.fas
+  391  ~/lab03-$MYGIT/allprotein.fas
+  392  mkdir ~/lab04-$MYGIT/globins
+  393  cd ~/lab04-$MYGIT/globins
+  394  seqkit grep --pattern-file ~/lab03-$MYGIT/globins/globins.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/globins/globins.homologs.fas
+  395  muscle -align ~/lab04-$MYGIT/globins/globins.homologs.fas -output ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  396  alv -kli  ~/lab04-$MYGIT/globins/globins.homologs.al.fas | less -RS
+  397  cd ~/lab04-$MYGIT/globins
+  398  seqkit grep --pattern-file ~/lab03-$MYGIT/globins/globins.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/globins/globins.homologs.fas
+  399  muscle -align ~/lab04-$MYGIT/globins/globins.homologs.fas -output ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  400  alv -kli  ~/lab04-$MYGIT/globins/globins.homologs.al.fas | less -RS
+  401  Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-jelfman/globins/globins.homologs.al.fas
+  402  script --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-s4-jelfman/globins/globins.homologs.al.fas
+  403  Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-s4-jelfman/globins/globins.homologs.al.fas
+  404  alignbuddy  -al  ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  405  alignbuddy -trm all  ~/lab04-$MYGIT/globins/globins.homologs.al.fas | alignbuddy  -al
+  406  alignbuddy -dinv 'ambig' ~/lab04-$MYGIT/globins/globins.homologs.al.fas | alignbuddy  -al
+  407  t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/globins/globins.homologs.al.fas -output sim
+  408  alignbuddy -pi ~/lab04-$MYGIT/globins/globins.homologs.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+  409       END{ print(100*sum/num) } '
+  410  mkdir ~/lab04-$MYGIT/heatshockfam
+  411  cd ~/lab04-$MYGIT/heatshockfam
+  412  pwd
+  413  seqkit grep --pattern-file ~/lab03-$MYGIT/globins/heatshockfam.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/globins/heatshockfam.homologs.fas
+  414  seqkit grep --pattern-file ~/lab03-$MYGIT/globins/-heatshockfam.homologs.fas ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/globins/-heatshockfam.homologs.fas
+  415  seqkit grep --pattern-file ~/lab03-$MYGIT/heatshockfam/-heatshockfam.homologs.fas ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/heatshockfam/-heatshockfam.homologs.fas
+  416  awk '{if ($6< 1e-30)print $1 }' globins.blastp.detail.out > globins.blastp.detail.filteawk '{if ($6< 1e-30)print $1 }' globins.blastp.detail.out > globins.blastp.detail.filtered.outred.out
+  417  awk '{if ($6< 1e-30)print $1 }' globins.blastp.detail.out > globins.blastp.detail.filtered.outawk '{if ($6< 1e-30)print $1 }' heatshockfam.homologs.al.fas > globins.blastp.detail.filtered.out
+  418  awk '{if ($6< 1e-30)print $1 }' heatshockfam.blastp.typical.out > globins.blastp.detail.filtered.out
+  419  globins.blastp.detail.filtered.out -output ~/lab04-$MYGIT/heatshockfam/globins.blastp.detail.filtered.out
+  420  muscle -align ~/lab04-$MYGIT/heatshockfam/heatshockfam.blastp.typical.out -output ~/lab04-$MYGIT/heatshockfam/heatshockfam.blastp.typical.out
+  421  seqkit grep --pattern-file ~/lab03-$MYGIT/heatshockfam/heatshockfam.blastp.typical.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/heatshockfam/heatshockfam.blastp.typical.out
+  422  pwd
+  423  seqkit grep --pattern-file ~/lab03-$MYGIT/heatshockfam/heatshockfam.blastp.typical.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/heatshockfam/heatshockfam.blastp.typical.out
+  424  seqkit grep --pattern-file ~/lab03-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out
+  425  muscle -align ~/lab04-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -output ~/lab04-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out
+  426  alv -kli  ~/lab04-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out | less -RS
+  427  Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  428  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  429  git add .
+  430  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  431  git pull --rebase=false --no-edit
+  432  git push
+  433  git clone https://github.com/Bio312/lab05-$MYGIT
+  434  ls
+  435  cd lab05-$MYGIT
+  436  ls
+  437  echo "((You,your_sister),(your_cousin,your_other_cousin));" > ~/lab05-$MYGIT/family.tre
+  438  nw_display ~/lab05-$MYGIT/family.tre 
+  439  nw_display -s ~/lab05-$MYGIT/family.tre > ~/lab05-$MYGIT/family.tre.svg
+  440  ~/lab05-$MYGIT/plotUnrooted.R
+  441  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/family.tre ~/lab05-$MYGIT/family.unrooted.pdf 1 35
+  442  echo "((Josh,Josie,Jamo),(Chris,Lee));" > ~/lab05-$MYGIT/family.tre
+  443  nw_display ~/lab05-$MYGIT/family.tre 
+  444  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/family.tre ~/lab05-$MYGIT/family.unrooted.pdf 1 35
+  445  nw_display
+  446  nw_display -s ~/lab05-$MYGIT/family.tre > ~/lab05-$MYGIT/family.tre.svg
+  447  nw_display ~/lab05-$MYGIT/subphyla.tre
+  448  pwd
+  449  echo "((Hemichordata,Echinodermata),(Cephalochordata,(Urochordata,(Agnatha,(Chondrichthyes,((Amphibia,(Sauropsida,Mammalia)Amniota)Tetrapoda,Actinopterygii)Euteleostomi)Gnathostomata)Vertebrata))Chordata)Deuterostomia;" > ~/lab05-$MYGIT/subphyla.tre
+  450  nw_display ~/lab05-$MYGIT/subphyla.tre
+  451  echo "((Hemichordata,Echinodermata),(Cephalochordata,(Urochordata,(Agnatha,(Chondrichthyes,((Amphibia,Mammalia),Actinopterygii))))));" | nw_display -
+  452  nw_reroot subphyla.tre Vertebrata >subphyla.reroot.tre 
+  453  nw_display subphyla.reroot.tre
+  454  echo "((((((F.catus,E.caballus)Laurasiatheria,H.sapiens)Boreoeutheria,(S.townsendi,(C.mydas,G.gallus)Archelosauria)Sauria)Amniota,X.laevis)Tetrapoda,(D.rerio,(S.salar,G.aculeatus)Euteleosteomorpha)Clupeocephala)Euteleostomi,C.carcharias)Gnathostomata;"  > ~/lab05-$MYGIT/species.tre
+  455  nw_display ~/lab05-$MYGIT/species.tre
+  456  nw_display -s ~/lab05-$MYGIT/species.tre > ~/lab05-$MYGIT/species.tre.svg
+  457  convert ~/lab05-$MYGIT/species.tre.svg ~/lab05-$MYGIT/species.tre.pdf
+  458  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/species.tre ~/lab05-$MYGIT/species.unrooted.pdf 0.4 35
+  459  mkdir ~/lab05-$MYGIT/globins
+  460  cd ~/lab05-$MYGIT/globins
+  461  sed 's/ /_/g'  ~/lab04-$MYGIT/globins/globins.homologs.al.fas | seqkit grep -v -r -p "dupelabel" >  ~/lab05-$MYGIT/globins/globins.homologsf.al.fas
+  462  iqtree -s ~/lab05-$MYGIT/globins/globins.homologsf.al.fas -bb 1000 -nt 2
+  463  ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.iqtree
+  464  nw_display ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile
+  465  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile.pdf 0.4 15
+  466  gotree reroot midpoint -i ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile -o ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile
+  467  nw_order -c n ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile  | nw_display -
+  468  nw_order -c n ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile | nw_display -w 1000 -b 'opacity:0' -s  >  ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile.svg -
+  469  convert  ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile.svg  ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile.pdf
+  470  nw_order -c n ~/lab05-$MYGIT/globins/globins.homologsf.al.mid.treefile | nw_topology - | nw_display -s  -w 1000 > ~/lab05-$MYGIT/globins/globins.homologsf.al.midCl.treefile.svg -
+  471  convert ~/lab05-$MYGIT/globins/globins.homologsf.al.midCl.treefile.svg ~/lab05-$MYGIT/globins/globins.homologsf.al.midCl.treefile.pdf
+  472  nw_reroot ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile H.sapiens_HBG1_hemoglobin_subunit_gamma1 H.sapiens_HBG2_hemoglobin_subunit_gamma2 H.sapiens_HBB_hemoglobin_subunit_beta H.sapiens_HBD_hemoglobin_subunit_delta >~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile
+  473  nw_order -c n ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile | nw_topology - | nw_display -s  -w 1000 > ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile.svg -
+  474  convert ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile.svg ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile.pdf
+  475  begin sets;
+  476      charset part1 = dna.phy: 1-100 201-300;
+  477      charset part2 = dna.phy: 101-200;
+  478      charset part3 = prot.phy: 1-150;
+  479      charset part4 = prot.phy: 151-400;
+  480      charpartition mine = HKY:part1, GTR+G:part2, WAG+I+G:part3, LG+G:part4;
+  481  end;
+  482  mkdir ~/lab05-$MYGIT/heatshockfam
+  483  cd ~/lab05-$MYGIT/heatshockfam
+  484  sed 's/ /_/g'  ~/lab04-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out | seqkit grep -v -r -p "dupelabel" >  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out
+  485  iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2
+  486  nw_display ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out
+  487  iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2 
+  488  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out 0.4 15
+  489  ~lab05-$MYGIT/globins/globins.homologsf.al.fas.iqtree
+  490  iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2 
+  491  ~lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.iqtree
+  492  nw_display ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile
+  493  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile ~/lab05-$MYGIT/globins/globins.homologsf.al.fas.treefile.pdf 0.4 15Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile.pdf 0.4 15
+  494  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile.pdf 0.4 15
+  495  gotree reroot midpoint -i ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile -o ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile
+  496  gotree reroot midpoint -i ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile -o ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile
+  497  gotree reroot midpoint < ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile > rerooted_treefile.txt
+  498  sed 's/ /_/g'  ~/lab04-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out | seqkit grep -v -r -p "dupelabel" >  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out
+  499  nw_display ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile
+  500  pwd
+  501  Rscript --vanilla ~/lab05-$MYGIT/plotUnrooted.R  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile.pdf 0.4 15
+  502  iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2 
+  503  --redo-tree
+  504  -redo
+  505  redo
+  506  '-redo'
+  507  -redo iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2 
+  508  Checkpoint (/home/bio312-user/lab05-s4-jelfman/heatshockfam/heatshockfam.blastp.detail.filtered.out.ckp.gz) indicates that a previous run successfully finished
+  509  redo iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2 
+  510  Checkpoint (/home/bio312-user/lab05-s4-jelfman/heatshockfam/heatshockfam.blastp.detail.filtered.out.ckp.gz) indicates that a previous run successfully finished
+  511  iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2 
+  512  Checkpoint (/home/bio312-user/lab05-s4-jelfman/heatshockfam/heatshockfam.blastp.detail.filtered.out.ckp.gz) indicates that a previous run successfully finisd
+  513  iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2 
+  514  Checkpoint (/home/bio312-user/lab05-s4-jelfman/heatshockfam/heatshockfam.blastp.detail.filtered.out.ckp.gz) indicates that a previous run successfully finished -redo
+  515  iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2 
+  516  Checkpoint (/home/bio312-user/lab05-s4-jelfman/heatshockfam/heatshockfam.blastp.detail.filtered.out.ckp.gz) indicates that a previous run successfully finished
+  517  -redo iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2 
+  518  iqtree -s ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out -bb 1000 -nt 2  -redo
+  519  nw_display ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile
+  520  gotree reroot midpoint -i ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.treefile -o ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile
+  521  nw_order -c n ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile  | nw_display -
+  522  nw_order -c n ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile | nw_display -w 1000 -b 'opacity:0' -s  >  ~/lab05-$MYGIT/heatchockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile.svg -
+  523  heatshockfam.blastp.detail.filtered.out.mid.treefile | nw_display -w 1000 -b 'opacity:0' -s  >  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile.svg -
+  524  nw_order -c n ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile | nw_display -w 1000 -b 'opacity:0' -s  >  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile.svg -
+  525  convert  ~/lab05-$MYGIT/heatshockfam/globins.homologsf.al.mid.treefile.svg  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile 
+  526  convert  ~/lab05-$MYGIT/heatshockfam/globins.homologsf.al.mid.treefile.svg  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile.pdf 
+  527  convert  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile.svg  ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile.pdf 
+  528  nw_order -c n ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile | nw_topology - | nw_display -s  -w 1000 > ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile.svg -
+  529  convert ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile.svg ~/lab05-$MYGIT/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile.pdf
+  530  history > lab5.commandhistory.txt

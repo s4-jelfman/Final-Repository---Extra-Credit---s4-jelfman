@@ -1,0 +1,2 @@
+/home/bio312-user/lab05-s4-jelfman/species.tre 
+/home/bio312-user/lab06-s4-jelfman/heatshockfam/heatshockfam.blastp.detail.filtered.out.mid.treefile
